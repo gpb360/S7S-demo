@@ -1,0 +1,118 @@
+/* Base styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #007bff;
+  --card-bg: #f8f9fa;
+  --card-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --link-color: #66b3ff;
+  --card-bg: #2d2d2d;
+  --card-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* SEO and Accessibility Improvements */
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.service-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Improved Navigation Accessibility */
+.nav-links {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--link-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--link-color);
+  color: var(--bg-color);
+  outline: none;
+}
+
+.nav-links a.active {
+  background-color: var(--link-color);
+  color: var(--bg-color);
+  font-weight: 600;
+}
+
+/* Semantic Structure */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
