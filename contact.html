@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Super Simple Website. Contact us for web development, design services, or any questions about our solutions.">
+    <meta name="keywords" content="contact us, web development contact, get in touch, website inquiries, professional services contact">
+    <meta name="author" content="Super Simple Website">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us - Super Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="http://localhost:8000/contact.html" />
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Us</h3>
+                    <p>Email: info@supersimplewebsite.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 Web Street, Digital City, 12345</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Super Simple Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
